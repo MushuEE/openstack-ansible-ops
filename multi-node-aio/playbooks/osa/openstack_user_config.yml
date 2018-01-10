@@ -1,15 +1,15 @@
 ---
 cidr_networks:
-  container: 10.0.236.0/22
-  tunnel: 10.0.240.0/22
-  storage: 10.0.244.0/22
-  flat: 10.0.248.0/22
+  container: 192.0.236.0/22
+  tunnel: 192.0.240.0/22
+  storage: 192.0.244.0/22
+  flat: 192.0.248.0/22
 
 used_ips:
-  - "10.0.236.0,10.0.236.200"
-  - "10.0.240.0,10.0.240.200"
-  - "10.0.244.0,10.0.244.200"
-  - "10.0.248.0,10.0.248.200"
+  - "192.0.236.0,192.0.236.200"
+  - "192.0.240.0,192.0.240.200"
+  - "192.0.244.0,192.0.244.200"
+  - "192.0.248.0,192.0.248.200"
 
 global_overrides:
   internal_lb_vip_address: "{{ internal_lb_vip_address | default(hostvars[groups['loadbalancer_hosts'][0]]['server_networks']['mgmt']['address'].split('/')[0]) }}"

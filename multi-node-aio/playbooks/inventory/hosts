@@ -4,21 +4,21 @@
 localhost      ansible_connection=local
 
 # MNAIO host
-mnaio1         ansible_host=10.0.2.1 ansible_connection=local
+mnaio1         ansible_host=192.0.2.1 ansible_connection=local
 
 # MNAIO VMs
-infra1         ansible_host=10.0.236.100
-infra2         ansible_host=10.0.236.101
-infra3         ansible_host=10.0.236.102
-cinder1        ansible_host=10.0.236.130
-cinder2        ansible_host=10.0.236.131
-compute1       ansible_host=10.0.236.120
-compute2       ansible_host=10.0.236.121
-loadbalancer1  ansible_host=10.0.236.150
-logging1       ansible_host=10.0.236.110
-swift1         ansible_host=10.0.236.140
-swift2         ansible_host=10.0.236.141
-swift3         ansible_host=10.0.236.142
+infra1         ansible_host=192.0.236.100
+infra2         ansible_host=192.0.236.101
+infra3         ansible_host=192.0.236.102
+cinder1        ansible_host=192.0.236.130
+cinder2        ansible_host=192.0.236.131
+compute1       ansible_host=192.0.236.120
+compute2       ansible_host=192.0.236.121
+loadbalancer1  ansible_host=192.0.236.150
+logging1       ansible_host=192.0.236.110
+swift1         ansible_host=192.0.236.140
+swift2         ansible_host=192.0.236.141
+swift3         ansible_host=192.0.236.142
 
 ################################# MNAIO HOSTS #################################
 

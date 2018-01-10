@@ -18,9 +18,9 @@ d-i netcfg/get_domain string common1.openstackci.local
 # d-i netcfg/dhcp_options select Configure network manually
 
 # # Static network configuration.
-# d-i netcfg/get_ipaddress string 10.0.0.100
+# d-i netcfg/get_ipaddress string 192.0.0.100
 # d-i netcfg/get_netmask string 255.255.255.0
-# d-i netcfg/get_gateway string 10.0.0.200
+# d-i netcfg/get_gateway string 192.0.0.200
 # d-i netcfg/get_nameservers string 8.8.8.8
 # d-i netcfg/confirm_static boolean true
 ## USE THIS FOR STATIC NETWORKING

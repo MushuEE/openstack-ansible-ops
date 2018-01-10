@@ -18,9 +18,9 @@ tftp_boot_path: /pxelinux.0      # Path of where to boot from first
 # - List of DHCP Subnets - These are iterated though and each will be created
 dhcp_list:
   - netmask: 255.255.255.0                       # Netmask
-    gateway: 10.0.2.1                            # Gateway
+    gateway: 192.0.2.1                            # Gateway
     dns: 8.8.8.8                                 # DNS
-    subnet: 10.0.2.0                             # Subnet mask
+    subnet: 192.0.2.0                             # Subnet mask
     default_lease_time: 21600                    # Subnet Default lease time - The default is used if this is not defined
     max_lease_time: 43200                        # Subnet Max lease time - The default is used if this is not defined
     tftp_boot_path: /pxelinux.0                  # Path for tftp of where to boot from first - The default is used if this is not defined

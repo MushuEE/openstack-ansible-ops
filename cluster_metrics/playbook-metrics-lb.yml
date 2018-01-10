@@ -31,7 +31,7 @@
             haproxy_whitelist_networks:
               - 192.168.0.0/16
               - 172.16.0.0/12
-              - 10.0.0.0/8
+              - 192.0.0.0/8
         - service:
             haproxy_service_name: influxdb
             haproxy_backend_nodes: "{{ groups['cluster-metrics'] | default([]) }}"
@@ -44,7 +44,7 @@
             haproxy_whitelist_networks:
               - 192.168.0.0/16
               - 172.16.0.0/12
-              - 10.0.0.0/8
+              - 192.0.0.0/8
             haproxy_acls:
               read_queries:
                 rule: "path_sub -i query"
@@ -63,7 +63,7 @@
             haproxy_whitelist_networks:
               - 192.168.0.0/16
               - 172.16.0.0/12
-              - 10.0.0.0/8
+              - 192.0.0.0/8
             haproxy_acls:
               write_queries:
                  rule: "path_sub -i write"

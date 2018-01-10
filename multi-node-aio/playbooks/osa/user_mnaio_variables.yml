@@ -3,7 +3,7 @@
 lxc_container_backing_store: dir
 
 # Tempest is being configured to use a known network
-tempest_public_subnet_cidr: 10.0.248.0/26
+tempest_public_subnet_cidr: 192.0.248.0/26
 
 # This makes running neutron in a distributed system easier and a lot less noisy
 neutron_l2_population: True

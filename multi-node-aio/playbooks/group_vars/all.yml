@@ -20,7 +20,7 @@ default_os_families:
   ubuntu-14.04-amd64: debian
 
 default_ubuntu_kernel: linux-generic
-default_ubuntu_mirror_proxy: 'http://10.0.2.1:3142/'
+default_ubuntu_mirror_proxy: 'http://192.0.2.1:3142/'
 default_ubuntu_mirror_hostname: archive.ubuntu.com
 default_ubuntu_mirror_directory: /ubuntu
 
@@ -89,19 +89,19 @@ mnaio_host_networks:
   dhcp:
     iface: 'vm-br-dhcp'                 # str  - required, interface name
     inet_type: 'static'                 # str  - required, iface type [static, dhcp, manual]
-    address: '10.0.2.1/22'              # str  - not required, must be in CIDR format
+    address: '192.0.2.1/22'              # str  - not required, must be in CIDR format
     iface_port: none                    # str  - required, physical port used within a host bridge
     address_aliases:                    # list - not required, items must be sting and in CIDR format
-      - '10.0.2.2/22'
+      - '192.0.2.2/22'
   mgmt:
     iface: 'vm-br-eth1'
     inet_type: 'static'
-    address: '10.0.236.1/22'
+    address: '192.0.236.1/22'
     iface_port: none
   flat:
     iface: 'vm-br-eth2'
     inet_type: 'static'
-    address: '10.0.248.1/22'
+    address: '192.0.248.1/22'
     iface_port: none
   vlan:
     iface: 'vm-br-eth3'
@@ -110,12 +110,12 @@ mnaio_host_networks:
   vxlan:
     iface: 'vm-br-eth4'
     inet_type: 'static'
-    address: '10.0.240.1/22'
+    address: '192.0.240.1/22'
     iface_port: none
   storage:
     iface: 'vm-br-eth5'
     inet_type: 'static'
-    address: '10.0.244.1/22'
+    address: '192.0.244.1/22'
     iface_port: none
 
 osa_enable_infra: true

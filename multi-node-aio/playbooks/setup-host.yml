@@ -105,11 +105,11 @@
         fi
       with_items:
         - table: 'nat'
-          rule: 'POSTROUTING -s 10.0.2.0/22 ! -d 10.0.2.0/22 -j MASQUERADE'
+          rule: 'POSTROUTING -s 192.0.2.0/22 ! -d 192.0.02.0/22 -j MASQUERADE'
         - table: 'mangle'
-          rule: 'POSTROUTING -s 10.0.2.0/22 -o vm-br-dhcp -p udp -m udp --dport 68 -j CHECKSUM --checksum-fill'
+          rule: 'POSTROUTING -s 192.0.2.0/22 -o vm-br-dhcp -p udp -m udp --dport 68 -j CHECKSUM --checksum-fill'
         - table: 'mangle'
-          rule: 'POSTROUTING -s 10.0.2.0/22 -o vm-br-dhcp -p udp -m udp --dport 68 -j CHECKSUM --checksum-fill'
+          rule: 'POSTROUTING -s 192.0.2.0/22 -o vm-br-dhcp -p udp -m udp --dport 68 -j CHECKSUM --checksum-fill'
 
     - name: Add IPtables pre-routing rules to allow external access to VMs
       shell: |
